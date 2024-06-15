@@ -7,7 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class Review5 {
+public class Review05 {
 
     public static void main(String[] args) {
         Connection con = null;
@@ -31,7 +31,7 @@ public class Review5 {
             // 5, 6. Select文の実行と結果を格納／代入
             System.out.print("検索キーワードを入力してください > ");    // ← 追記
             String input = keyIn();    // ← 追記
-            System.out.println(input);
+
 
          // PreparedStatementオブジェクトの?に値をセット  // ← 追記
             pstmt.setInt(1, Integer.parseInt(input));  // ← 追記
